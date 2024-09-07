@@ -1,0 +1,64 @@
+/* Components */
+@import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
+.nav-colored {
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  background-color: rgba(217, 171, 171, 0.6745098039);
+}
+.nav-colored .nav-link {
+  color: #ffb784;
+}
+
+.nav-non-colored {
+  background-color: transparent;
+}
+.nav-non-colored .nav-link {
+  color: #ffeac5;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  transition: background-color 0.6s;
+}
+#navbar #nav-links {
+  display: flex;
+  align-items: center;
+}
+#navbar .nav-link {
+  transition: color 0.6s;
+  font-family: "Protest Guerrilla";
+  text-decoration: none;
+}
+
+@media (min-width: 300px) {
+  #navbar {
+    padding: 30px;
+  }
+  #navbar #nav-links {
+    column-gap: 30px;
+  }
+  #navbar .nav-link {
+    font-size: 52px;
+    font-weight: 700;
+  }
+}
+/* Google fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  color: white;
+  background-color: #1b1312;
+  height: 3600px;
+}
+
+/*# sourceMappingURL=index.css.map */
