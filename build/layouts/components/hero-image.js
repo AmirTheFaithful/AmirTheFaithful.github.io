@@ -9,6 +9,6 @@ const buildHeroText = (parent) => {
     heading.className = "hero-text";
     parent.append(heading);
 };
-function applyHeroImage() {
-    buildHeroImage(document.body);
+export default function applyHeroImage(parent) {
+    buildHeroImage(parent);
 }
