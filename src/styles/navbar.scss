@@ -2,8 +2,8 @@
 
 .nav-colored {
   backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  background-color: #d9ababac;
+  -webkit-backdrop-filter: blur(6px);
+  background-color: #d9abab7c;
 
   .nav-link {
     color: #ffb784;
@@ -37,7 +37,7 @@
 
   .nav-link {
     transition: color 0.6s;
-    font-family: "Protest Guerrilla";
+    font-family: "Open Sans", "Montserrat", "Handjet";
     text-decoration: none;
   }
 }

@@ -30,8 +30,8 @@ const buildLinksContainer: Builder = (parent) => {
 
   let container: Div = getDiv();
   let links: NavLink[] = [
-    { title: "home", url: "index.html" },
-    { title: "about", url: "about.html" },
+    { title: "додму", url: "index.html" },
+    { title: "про сайт", url: "about.html" },
   ];
 
   links.map((link: NavLink): void => {
