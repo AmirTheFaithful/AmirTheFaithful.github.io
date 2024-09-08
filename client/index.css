@@ -1,5 +1,5 @@
-/* Components */
-@import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
+/* Elements (unique components) */
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 .nav-colored {
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
@@ -48,6 +48,29 @@
     font-weight: 700;
   }
 }
+/* Components */
+@keyframes Swing {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(2.5%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-2.5%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.swing {
+  animation-name: Swing;
+  animation-duration: 3s;
+}
+
 .hero-image {
   position: relative;
   height: 100%;

@@ -23,6 +23,7 @@ const buildHeroText: Builder = (parent) => {
 
   const heroText: Div = getDiv();
   heroText.className = "hero-text";
+  heroText.classList.add("swing");
 
   captions.forEach((caption: Caption): void => {
     const heading: Heading = getHeading(caption.level);
