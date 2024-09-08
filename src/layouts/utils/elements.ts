@@ -8,7 +8,7 @@ export const getParagraph = (): Paragraph => {
   return paragraph;
 };
 
-export const getHeading = (): Heading => {
-  const heading: Heading = document.createElement("h1");
+export const getHeading = (level: 1 | 2 | 3 | 4 | 5 | 6): Heading => {
+  const heading: Heading = document.createElement(`h${level}`);
   return heading;
 };

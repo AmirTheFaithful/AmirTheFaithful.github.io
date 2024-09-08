@@ -6,7 +6,7 @@ export const getParagraph = () => {
     const paragraph = document.createElement("p");
     return paragraph;
 };
-export const getHeading = () => {
-    const heading = document.createElement("h1");
+export const getHeading = (level) => {
+    const heading = document.createElement(`h${level}`);
     return heading;
 };
