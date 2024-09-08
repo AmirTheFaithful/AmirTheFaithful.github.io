@@ -4,7 +4,7 @@
   }
 
   25% {
-    transform: translateY(2.5%);
+    transform: translateY(10%);
   }
 
   50% {
@@ -12,7 +12,7 @@
   }
 
   75% {
-    transform: translateY(-2.5%);
+    transform: translateY(10%);
   }
 
   100% {
@@ -22,5 +22,6 @@
 
 .swing {
   animation-name: Swing;
-  animation-duration: 3s;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
 }

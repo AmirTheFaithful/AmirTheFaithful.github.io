@@ -1,4 +1,5 @@
 /* Elements (unique components) */
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 .nav-colored {
   backdrop-filter: blur(24px);
@@ -32,7 +33,7 @@
 }
 #navbar .nav-link {
   transition: color 0.6s;
-  font-family: "Open Sans", "Montserrat", "Handjet";
+  font-family: "Caveat";
   text-decoration: none;
 }
 
@@ -45,7 +46,6 @@
   }
   #navbar .nav-link {
     font-size: 52px;
-    font-weight: 700;
   }
 }
 /* Components */
@@ -54,13 +54,13 @@
     transform: translateY(0);
   }
   25% {
-    transform: translateY(2.5%);
+    transform: translateY(10%);
   }
   50% {
     transform: translateY(0);
   }
   75% {
-    transform: translateY(-2.5%);
+    transform: translateY(10%);
   }
   100% {
     transform: translateY(0);
@@ -68,7 +68,8 @@
 }
 .swing {
   animation-name: Swing;
-  animation-duration: 3s;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
 }
 
 .hero-image {
@@ -81,18 +82,20 @@
 }
 
 .hero-text {
+  position: absolute;
+  left: 22%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-family: "Protest Guerrilla", "Montserrat", "Open Sans";
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  font-weight: 600;
-  font-family: "Protest Guerrilla";
 }
 
 @media (min-width: 300px) {
   .hero-text {
-    position: absolute;
-    left: 50%;
-    bottom: 2%;
-    transform: translate(-50%, -50%);
+    bottom: 7%;
+    row-gap: 12px;
   }
   .hero-text h1 {
     opacity: 0.97;

@@ -12,18 +12,25 @@
 }
 
 .hero-text {
+  position: absolute;
+  left: 22%;
+
+  display: flex;
+  flex-direction: column;
+
+  font: {
+    weight: 600;
+    family: "Protest Guerrilla", "Montserrat", "Open Sans";
+  }
+
   color: #fffc;
   text-align: center;
-  font-weight: 600;
-  font-family: "Protest Guerrilla";
 }
 
 @media (min-width: 300px) {
   .hero-text {
-    position: absolute;
-    left: 50%;
-    bottom: 2%;
-    transform: translate(-50%, -50%);
+    bottom: 7%;
+    row-gap: 12px;
 
     h1 {
       opacity: 0.97;
