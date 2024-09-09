@@ -13,6 +13,7 @@ const buildLine = (parent, props) => {
 };
 const buildText = (parent, props) => {
     let paragraph = getParagraph();
+    paragraph.className = "single-text";
     if (typeof props === "object") {
         buildTexts(parent, props);
     }
@@ -24,6 +25,7 @@ const buildText = (parent, props) => {
 const buildTexts = (parent, props) => {
     let textContainer = getDiv();
     let texts = props;
+    textContainer.className = "text-group";
     texts.map((text) => {
         const paragraph = getParagraph();
         paragraph.innerHTML = text;

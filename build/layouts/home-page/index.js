@@ -5,6 +5,7 @@ import { getParagraph } from "../utils/elements.js";
 applyHeroImage(document.body);
 applyTextLine(document.body, {
     text: "Місто вічного літа",
+    color: "#abc",
 });
 for (let i = 0; i < 101; i++) {
     const paragraph = getParagraph();

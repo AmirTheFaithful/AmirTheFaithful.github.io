@@ -2,6 +2,7 @@ import { getDiv, getParagraph } from "../utils/elements.js";
 
 interface Props {
   color?: string;
+  image?: string;
   text: string | string[];
 }
 
@@ -11,6 +12,8 @@ const buildLine: Builder = (parent, props: Props) => {
 
   if (props.color) {
     line.style.backgroundColor = props.color;
+  } else if (props.image) {
+    line.style.backgroundImage = props.image;
   } else {
     line.style.backgroundColor = "#fff";
   }
@@ -22,6 +25,7 @@ const buildLine: Builder = (parent, props: Props) => {
 
 const buildText: Builder = (parent, props: string | string[]) => {
   let paragraph: Paragraph = getParagraph();
+  paragraph.className = "single-text";
 
   if (typeof props === "object") {
     buildTexts(parent, props);
@@ -35,6 +39,8 @@ const buildText: Builder = (parent, props: string | string[]) => {
 const buildTexts: Builder = (parent, props: string[]) => {
   let textContainer: Div = getDiv();
   let texts: string[] = props;
+
+  textContainer.className = "text-group";
 
   texts.map((text: string): void => {
     const paragraph: Paragraph = getParagraph();

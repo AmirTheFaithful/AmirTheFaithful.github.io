@@ -1,10 +1,10 @@
 .text-line {
-  p {
+  .single-text {
     color: black;
     font-family: "Montserrat", "Caveat";
   }
 
-  div {
+  .text-group {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,13 +14,13 @@
 /* Mobile */
 @media (min-width: 300px) {
   .text-line {
-    padding: 16px;
+    padding: 40px;
 
-    p {
-      font-size: 64px;
+    .single-text {
+      font-size: 72px;
     }
 
-    div {
+    .text-group {
       row-gap: 20px;
     }
   }

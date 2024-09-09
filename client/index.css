@@ -156,11 +156,11 @@
     font-size: 70px;
   }
 }
-.text-line p {
+.text-line .single-text {
   color: black;
   font-family: "Montserrat", "Caveat";
 }
-.text-line div {
+.text-line .text-group {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -169,12 +169,12 @@
 /* Mobile */
 @media (min-width: 300px) {
   .text-line {
-    padding: 16px;
+    padding: 40px;
   }
-  .text-line p {
-    font-size: 64px;
+  .text-line .single-text {
+    font-size: 72px;
   }
-  .text-line div {
+  .text-line .text-group {
     row-gap: 20px;
   }
 }
