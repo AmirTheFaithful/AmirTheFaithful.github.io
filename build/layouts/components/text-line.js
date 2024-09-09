@@ -12,6 +12,9 @@ const buildLine = (parent, props) => {
     else {
         line.style.backgroundColor = "#fff";
     }
+    if (props.textColor) {
+        line.style.color = props.textColor;
+    }
     buildText(line, props.text);
     parent.append(line);
 };

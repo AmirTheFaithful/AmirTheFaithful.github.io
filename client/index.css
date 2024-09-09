@@ -157,7 +157,6 @@
   }
 }
 .text-line .single-text {
-  color: black;
   font-family: "Montserrat", "Caveat";
 }
 .text-line .text-group {
@@ -175,7 +174,7 @@
 /* Mobile */
 @media (min-width: 300px) {
   .text-line {
-    padding: 40px;
+    padding: 86px;
   }
   .text-line .single-text {
     font-size: 72px;

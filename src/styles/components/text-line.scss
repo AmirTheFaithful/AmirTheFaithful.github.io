@@ -1,6 +1,5 @@
 .text-line {
   .single-text {
-    color: black;
     font-family: "Montserrat", "Caveat";
   }
 
@@ -20,7 +19,7 @@
 /* Mobile */
 @media (min-width: 300px) {
   .text-line {
-    padding: 40px;
+    padding: 86px;
 
     .single-text {
       font-size: 72px;
