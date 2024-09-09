@@ -4,4 +4,4 @@ type Div = HTMLDivElement;
 type Heading = HTMLHeadingElement;
 type Paragraph = HTMLParagraphElement;
 
-type Builder = (parent: HTMLElement) => void;
+type Builder = (parent: HTMLElement, props: any) => void;
