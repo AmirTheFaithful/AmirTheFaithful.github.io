@@ -5,6 +5,10 @@ const buildLine = (parent, props) => {
     if (props.color) {
         line.style.backgroundColor = props.color;
     }
+    else if (props.image) {
+        line.classList.add("img-bg");
+        line.style.backgroundImage = props.image;
+    }
     else {
         line.style.backgroundColor = "#fff";
     }

@@ -166,6 +166,12 @@
   justify-content: center;
 }
 
+.img-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* Mobile */
 @media (min-width: 300px) {
   .text-line {

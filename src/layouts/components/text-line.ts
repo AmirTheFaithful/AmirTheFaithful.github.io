@@ -4,6 +4,7 @@ interface Props {
   color?: string;
   image?: string;
   text: string | string[];
+  textColor?: string;
 }
 
 const buildLine: Builder = (parent, props: Props) => {
@@ -13,9 +14,14 @@ const buildLine: Builder = (parent, props: Props) => {
   if (props.color) {
     line.style.backgroundColor = props.color;
   } else if (props.image) {
+    line.classList.add("img-bg");
     line.style.backgroundImage = props.image;
   } else {
     line.style.backgroundColor = "#fff";
+  }
+
+  if (props.textColor) {
+    line.style.color = props.textColor;
   }
 
   buildText(line, props.text);
