@@ -156,6 +156,32 @@
     font-size: 70px;
   }
 }
+.text-line p {
+  color: black;
+  font-family: "Montserrat", "Caveat";
+}
+.text-line div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Mobile */
+@media (min-width: 300px) {
+  .text-line {
+    padding: 16px;
+  }
+  .text-line p {
+    font-size: 64px;
+  }
+  .text-line div {
+    row-gap: 20px;
+  }
+}
+/* Tablets */
+/* Small Desktop */
+/* Large desktops */
+/* TVs and extra large screens */
 /* Google fonts */
 * {
   margin: 0;

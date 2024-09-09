@@ -1,15 +1,11 @@
-import { getDiv, getParagraph } from "../utils/elements";
+import { getDiv, getParagraph } from "../utils/elements.js";
 
-interface TextProps {
+interface Props {
+  color?: string;
   text: string | string[];
 }
 
-interface MainProps {
-  color?: string;
-  text: string;
-}
-
-const buildLine: Builder = (parent, props: MainProps) => {
+const buildLine: Builder = (parent, props: Props) => {
   let line: Div = getDiv();
   line.className = "text-line";
 
@@ -24,13 +20,13 @@ const buildLine: Builder = (parent, props: MainProps) => {
   parent.append(line);
 };
 
-const buildText: Builder = (parent, props: TextProps) => {
+const buildText: Builder = (parent, props: string | string[]) => {
   let paragraph: Paragraph = getParagraph();
 
-  if (typeof props.text === "object") {
-    buildTexts(parent, props.text);
+  if (typeof props === "object") {
+    buildTexts(parent, props);
   } else {
-    paragraph.innerHTML = props.text;
+    paragraph.innerHTML = props;
   }
 
   parent.append(paragraph);
@@ -49,7 +45,6 @@ const buildTexts: Builder = (parent, props: string[]) => {
   parent.append(textContainer);
 };
 
-export default function applyTextLine(
-  parent: Element,
-  props: MainProps
-): void {}
+export default function applyTextLine(parent: HTMLElement, props: Props): void {
+  buildLine(parent, props);
+}

@@ -1,0 +1,43 @@
+.text-line {
+  p {
+    color: black;
+    font-family: "Montserrat", "Caveat";
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* Mobile */
+@media (min-width: 300px) {
+  .text-line {
+    padding: 16px;
+
+    p {
+      font-size: 64px;
+    }
+
+    div {
+      row-gap: 20px;
+    }
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) {
+}
+
+/* Small Desktop */
+@media (min-width: 769px) {
+}
+
+/* Large desktops */
+@media (min-width: 1025px) {
+}
+
+/* TVs and extra large screens */
+@media (min-width: 1201px) {
+}
