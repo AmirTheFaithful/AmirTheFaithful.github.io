@@ -42,9 +42,10 @@
   }
 }
 
+/* Mobile */
 @media (min-width: 300px) {
   #navbar {
-    $sz: 30px;
+    $sz: 32px;
 
     padding: $sz;
 
@@ -53,9 +54,61 @@
     }
 
     .nav-link {
-      font: {
-        size: 52px;
-      }
+      font-size: 52px;
+    }
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) {
+  #navbar {
+    $sz: 24px;
+
+    padding: $sz;
+
+    #nav-links {
+      column-gap: $sz;
+    }
+
+    .nav-link {
+      font-size: 42px;
+    }
+  }
+}
+
+/* Small Desktop */
+@media (min-width: 769px) {
+  #navbar {
+    padding: 12px;
+
+    img {
+      width: 60px;
+    }
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1025px) {
+  #navbar {
+    padding: 12px;
+
+    .nav-link {
+      font-size: 36px;
+    }
+
+    img {
+      width: 45px;
+    }
+  }
+}
+
+/* TVs and extra large screens */
+@media (min-width: 1201px) {
+  #navbar {
+    padding: 16px;
+
+    img {
+      width: 35px;
     }
   }
 }
