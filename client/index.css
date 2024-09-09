@@ -129,7 +129,6 @@
 
 .hero-text {
   position: absolute;
-  left: 22%;
   display: flex;
   flex-direction: column;
   font-weight: 600;
@@ -140,6 +139,7 @@
 
 @media (min-width: 300px) {
   .hero-text {
+    left: 20%;
     bottom: 7%;
     row-gap: 12px;
   }
@@ -154,6 +154,50 @@
   .hero-text h3 {
     opacity: 0.93;
     font-size: 70px;
+  }
+}
+/* Tablets */
+@media (min-width: 481px) {
+  .hero-text {
+    bottom: 9%;
+  }
+}
+/* Small Desktop */
+@media (min-width: 769px) {
+  .hero-text {
+    left: 30%;
+    bottom: 7%;
+  }
+  .hero-text h1 {
+    font-size: 90px;
+  }
+  .hero-text h2 {
+    font-size: 70px;
+  }
+  .hero-text h3 {
+    font-size: 50px;
+  }
+}
+/* Large desktops */
+@media (min-width: 1025px) {
+  .hero-text {
+    left: 32%;
+    bottom: 12%;
+  }
+  .hero-text h1 {
+    font-size: 70px;
+  }
+  .hero-text h2 {
+    font-size: 50px;
+  }
+  .hero-text h3 {
+    font-size: 30px;
+  }
+}
+/* TVs and extra large screens */
+@media (min-width: 1201px) {
+  .hero-text {
+    left: 35%;
   }
 }
 .text-line .single-text {
